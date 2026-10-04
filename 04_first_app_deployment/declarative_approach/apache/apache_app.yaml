@@ -11,7 +11,7 @@ spec:
     targetRevision: feature/implementation           # Git branch or tag (e.g., main, dev, release-1.0)
     path: 04_first_app_deployment/declarative_approach/apache   # Path inside repo where manifests live
   destination:
-    server: <argocd_cluster_server_url>   # Target cluster API
+    server: https://172.18.0.6:6443    # Target cluster API
     namespace: apache             # Namespace in which to deploy the app
   syncPolicy:                      # Defines how ArgoCD syncs the app
     automated:                     # Enable auto-sync
